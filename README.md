@@ -8,7 +8,7 @@ BY CAMILA SANTILLAN AND LORETTA GONZALEZ
 </head>
 <body>
 <h2>Introvert or Extrovert Survey</h2>
-<form action="https://formspree.io/f/xleykbdo" method="post">
+<form id="surveyForm" action="https://formspree.io/f/xleykbdo" method="post">
     <label for="name">What is your name?</label>
     <input type="text" id="name"
     name="name" placeholder="Your Name">
@@ -135,5 +135,39 @@ BY CAMILA SANTILLAN AND LORETTA GONZALEZ
     
 <input type="submit" value="Submit">
 </form>
-</body>
-</html>
+
+<div id="result"></div>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    
+    document.getElementById('surveyForm').onsubmit = function(event) { 
+        calculateResults();
+    };
+});
+
+function calculateResults() {
+    var totalYes = 0;
+    var totalNo = 0;
+    // Loop through all 20 questions
+    for (var i = 1; i <= 20; i++) {
+        if (document.getElementById('yes' + i).checked) {
+            totalYes++;
+        } else if (document.getElementById('no' + i).checked) {
+            totalNo++;
+        }
+    }
+    // Determine the result based on the number of 'yes' answers
+    var resultText = "Based on your answers, you are ";
+    if (totalYes > totalNo) {
+        resultText += "more extroverted.";
+    } else if (totalYes < totalNo) {
+        resultText += "more introverted.";
+    } else {
+        resultText += "balanced between extroverted and introverted traits.";
+    }
+    // Display the result
+    document.getElementById('result').textContent = resultText;
+}
+</script>
