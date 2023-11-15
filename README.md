@@ -22,7 +22,7 @@ BY CAMILA SANTILLAN AND LORETTA GONZALEZ
     <input type="radio" id="no2" name="question2" value="no">
     <label for="no2">No</label><br>
     
-    <p>3. Do you prefer working in a team or alone?</p>
+    <p>3. Do you prefer working in a team?</p>
     <input type="radio" id="yes3" name="question3" value="yes">
     <label for="yes3">Yes</label><br>
     <input type="radio" id="no3" name="question3" value="no">
@@ -46,7 +46,7 @@ BY CAMILA SANTILLAN AND LORETTA GONZALEZ
     <input type="radio" id="no6" name="question6" value="no">
     <label for="no6">No</label><br>
     
-    <p>7. Do you prefer having a wide circle of friends or a few close ones?</p>
+    <p>7. Do you prefer having a wide circle of friends?</p>
     <input type="radio" id="yes7" name="question7" value="yes">
     <label for="yes7">Yes</label><br>
     <input type="radio" id="no7" name="question7" value="no">
@@ -70,25 +70,25 @@ BY CAMILA SANTILLAN AND LORETTA GONZALEZ
     <input type="radio" id="no10" name="question10" value="no">
     <label for="no10">No</label><br>
     
-    <p>11. Do you feel more fulfilled after spending time with others or by yourself?</p>
+    <p>11. Do you feel more fulfilled after spending time with others?</p>
     <input type="radio" id="yes11" name="question11" value="yes">
     <label for="yes11">Yes</label><br>
     <input type="radio" id="no11" name="question11" value="no">
     <label for="no11">No</label><br>
     
-    <p>12. Are you more likely to express your opinions in a group setting or keep them to yourself?</p>
+    <p>12. Are you more likely to keep your opinions to yourself?</p>
     <input type="radio" id="yes12" name="question12" value="yes">
     <label for="yes12">Yes</label><br>
     <input type="radio" id="no12" name="question12" value="no">
     <label for="no12">No</label><br>
     
-    <p>13. Do you prefer attending large parties or small gatherings?</p>
+    <p>13. Do you like attending large parties?</p>
     <input type="radio" id="yes13" name="question13" value="yes">
     <label for="yes13">Yes</label><br>
     <input type="radio" id="no13" name="question13" value="no">
     <label for="no13">No</label><br>
     
-    <p>14. Does spending an entire day alone sound enjoyable or boring to you?</p>
+    <p>14. Does spending an entire day alone sound enjoyable to you?</p>
     <input type="radio" id="yes14" name="question14" value="yes">
     <label for="yes14">Yes</label><br>
     <input type="radio" id="no14" name="question14" value="no">
@@ -100,13 +100,13 @@ BY CAMILA SANTILLAN AND LORETTA GONZALEZ
     <input type="radio" id="no15" name="question15" value="no">
     <label for="no15">No</label><br>
     
-    <p>16. Are you more focused on your inner world or the world around you?</p>
+    <p>16. Are you more focused on your inner world?</p>
     <input type="radio" id="yes16" name="question16" value="yes">
     <label for="yes16">Yes</label><br>
     <input type="radio" id="no16" name="question16" value="no">
     <label for="no16">No</label><br>
     
-    <p>17. Do you prefer deep conversations with a few people over casual chats with many?</p>
+    <p>17. Do you prefer casual chats with many people more than deep conversation witha small group?</p>
     <input type="radio" id="yes17" name="question17" value="yes">
     <label for="yes17">Yes</label><br>
     <input type="radio" id="no17" name="question17" value="no">
