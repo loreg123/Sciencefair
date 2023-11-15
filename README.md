@@ -1,6 +1,7 @@
-# Sciencefair
+# INTROVERTS VS EXTROVERTS SURVEY
+BY CAMILA SANTILLAN AND LORETTA GONZALEZ
 
-<!DOCTYPE html>
+
 <html>
 <head>
 <title>Introvert or Extrovert Survey</title>
