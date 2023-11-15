@@ -165,13 +165,15 @@ function calculateResults() {
 
   
   var resultText = "Based on your answers, you are ";
-  if (totalYesEvens > totalYesOdds) {
-    resultText += "mostly introverted.";
-  } else if (totalYesEvens < totalYesOdds) {
-    resultText += "mostly extroverted.";
+  if (totalYesEvens >
+  Math.floor(totalQuestions / 2)) {
+      resultText += "mostly introverted.";
+      } else if (totalYesOdds >
+  Math.floor(totalQuestions / 2)) {
+      resultText += "mostly extroverted.";
   } else {
-    resultText += "a balance between introverted and extroverted traits.";
-  }
+      resultText += "a balance between introverted and extroverted traits.";
+    }  
 
   
   document.getElementById('result').textContent = resultText;
