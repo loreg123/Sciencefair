@@ -138,7 +138,6 @@ BY CAMILA SANTILLAN AND LORETTA GONZALEZ
 
 <div id="result"></div>
 
-<script>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
