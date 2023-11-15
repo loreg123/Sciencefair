@@ -9,6 +9,9 @@ BY CAMILA SANTILLAN AND LORETTA GONZALEZ
 <body>
 <h2>Introvert or Extrovert Survey</h2>
 <form action="https://formspree.io/f/xleykbdo" method="post">
+    <p>What is your name?</p>
+    <input type="text" name="name"
+    placeholder="Your Name>
 
     <p>1. Do you feel energized when you are around a lot of people?</p>
     <input type="radio" id="yes1" name="question1" value="yes">
