@@ -140,35 +140,40 @@ BY CAMILA SANTILLAN AND LORETTA GONZALEZ
 
 <script>
 
+<script>
 document.addEventListener('DOMContentLoaded', function() {
-    
-    document.getElementById('surveyForm').onsubmit = function(event) { 
-        event.preventDefault()
-        calculateResults();
-    };
+  document.getElementById('surveyForm').onsubmit = function(event) {
+    event.preventDefault();
+    calculateResults();
+  };
 });
 
 function calculateResults() {
-    var totalYes = 0;
-    var totalNo = 0;
-    // Loop through all 20 questions
-    for (var i = 1; i <= 20; i++) {
-        if (document.getElementById('yes' + i).checked) {
-            totalYes++;
-        } else if (document.getElementById('no' + i).checked) {
-            totalNo++;
-        }
+  var totalYesEvens = 0;
+  var totalYesOdds = 0;
+  var totalQuestions = 20; // Assuming you have 20 questions
+
+  for (var i = 1; i <= totalQuestions; i++) {
+    if (document.getElementById('yes' + i).checked) {
+      if (i % 2 === 0) { // Check if the question number is even
+        totalYesEvens++;
+      } else {
+        totalYesOdds++;
+      }
     }
-    // Determine the result based on the number of 'yes' answers
-    var resultText = "Based on your answers, you are ";
-    if (totalYes > totalNo) {
-        resultText += "more extroverted.";
-    } else if (totalYes < totalNo) {
-        resultText += "more introverted.";
-    } else {
-        resultText += "balanced between extroverted and introverted traits.";
-    }
-    // Display the result
-    document.getElementById('result').textContent = resultText;
+  }
+
+  // Determine the result based on the majority of 'yes' answers on odd or even questions
+  var resultText = "Based on your answers, you are ";
+  if (totalYesEvens > totalYesOdds) {
+    resultText += "mostly introverted.";
+  } else if (totalYesEvens < totalYesOdds) {
+    resultText += "mostly extroverted.";
+  } else {
+    resultText += "a balance between introverted and extroverted traits.";
+  }
+
+  // Display the result
+  document.getElementById('result').textContent = resultText;
 }
 </script>
