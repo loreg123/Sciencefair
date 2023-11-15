@@ -151,11 +151,11 @@ document.addEventListener('DOMContentLoaded', function() {
 function calculateResults() {
   var totalYesEvens = 0;
   var totalYesOdds = 0;
-  var totalQuestions = 20; // Assuming you have 20 questions
+  var totalQuestions = 20; 
 
   for (var i = 1; i <= totalQuestions; i++) {
     if (document.getElementById('yes' + i).checked) {
-      if (i % 2 === 0) { // Check if the question number is even
+      if (i % 2 === 0) { 
         totalYesEvens++;
       } else {
         totalYesOdds++;
@@ -163,7 +163,7 @@ function calculateResults() {
     }
   }
 
-  // Determine the result based on the majority of 'yes' answers on odd or even questions
+  
   var resultText = "Based on your answers, you are ";
   if (totalYesEvens > totalYesOdds) {
     resultText += "mostly introverted.";
@@ -173,7 +173,7 @@ function calculateResults() {
     resultText += "a balance between introverted and extroverted traits.";
   }
 
-  // Display the result
+  
   document.getElementById('result').textContent = resultText;
 }
 </script>
