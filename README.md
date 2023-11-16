@@ -1,10 +1,7 @@
-# INTROVERTS VS EXTROVERTS SURVEY
-BY CAMILA SANTILLAN AND LORETTA GONZALEZ
-
 
 <html>
 <head>
-<title>Introvert or Extrovert Survey</title>
+    <title>Science Fair: Introvert or Extrovert Survey</title>
     <link href="https://fonts.googleapis.com/css2?family=Viga&family=Kanit&display=swap" rel="stylesheet">
     <style>
         body {
@@ -32,6 +29,7 @@ BY CAMILA SANTILLAN AND LORETTA GONZALEZ
         label, p {
             font-size: 16px;
             margin-bottom: 10px;
+            color: black; /* Text color for questions and options */
         }
         input[type="text"], input[type="radio"] {
             margin-bottom: 15px;
@@ -51,7 +49,10 @@ BY CAMILA SANTILLAN AND LORETTA GONZALEZ
     </style>
 </head>
 <body>
-<h2>Introvert or Extrovert Survey</h2>
+    <h2>Introverts vs Extroverts Survey</h2>
+    <p class="author">By Camila Santillan and Loretta Gonzalez</p>
+
+
 <form id="surveyForm" action="https://formspree.io/f/xleykbdo" method="post">
     <label for="name">What is your name?</label>
     <input type="text" id="name"
