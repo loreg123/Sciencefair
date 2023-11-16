@@ -142,7 +142,6 @@ BY CAMILA SANTILLAN AND LORETTA GONZALEZ
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('surveyForm').onsubmit = function(event) {
-    event.preventDefault();
     calculateResults();
   };
 });
