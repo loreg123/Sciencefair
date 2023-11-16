@@ -5,18 +5,23 @@ BY CAMILA SANTILLAN AND LORETTA GONZALEZ
 <html>
 <head>
 <title>Introvert or Extrovert Survey</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Viga&family=Kanit&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
+            font-family: 'Viga', sans-serif; /* Default font for the body */
+            background-color: black;
+            color: white; /* Default text color */
             margin: 0;
             padding: 20px;
         }
         h2 {
             font-size: 24px;
-            color: #333;
+            color: lightpink; /* Title color */
+            font-family: 'Viga', sans-serif; /* Font for the title */
+        }
+        .author {
+            color: white; /* Author's names color */
+            font-family: 'Kanit', sans-serif; /* Font for the author names */
         }
         form {
             background: #fff;
@@ -33,15 +38,15 @@ BY CAMILA SANTILLAN AND LORETTA GONZALEZ
         }
         input[type="submit"] {
             font-size: 18px;
-            color: white;
-            background-color: #4CAF50;
+            color: black;
+            background-color: #FF69B4; /* Submit button color */
             padding: 10px 20px;
             border: none;
             border-radius: 4px;
             cursor: pointer;
         }
         input[type="submit"]:hover {
-            background-color: #45a049;
+            background-color: #ff5b85; /* Darker shade for hover effect */
         }
     </style>
 </head>
