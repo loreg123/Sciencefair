@@ -5,6 +5,45 @@ BY CAMILA SANTILLAN AND LORETTA GONZALEZ
 <html>
 <head>
 <title>Introvert or Extrovert Survey</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h2 {
+            font-size: 24px;
+            color: #333;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        label, p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="radio"] {
+            margin-bottom: 15px;
+        }
+        input[type="submit"] {
+            font-size: 18px;
+            color: white;
+            background-color: #4CAF50;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
 <h2>Introvert or Extrovert Survey</h2>
