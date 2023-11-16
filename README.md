@@ -132,47 +132,51 @@ BY CAMILA SANTILLAN AND LORETTA GONZALEZ
     <label for="yes20">Yes</label><br>
     <input type="radio" id="no20" name="question20" value="no">
     <label for="no20">No</label><br>
-    
-<input type="submit" value="Submit">
-</form>
 
-<div id="result"></div>
+<input type="hidden" id="resultInput" name="result" value="">
 
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+    </form>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  document.getElementById('surveyForm').onsubmit = function(event) {
-    calculateResults();
-  };
-});
+    <div id="result"></div>
 
-function calculateResults() {
-  var totalYesEvens = 0;
-  var totalYesOdds = 0;
-  var totalQuestions = 20; 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('surveyForm').onsubmit = function(event) {
+                event.preventDefault(); // Prevent the default form submission
+                calculateResults();
+            };
+        });
 
-  for (var i = 1; i <= totalQuestions; i++) {
-    if (document.getElementById('yes' + i).checked) {
-      if (i % 2 === 0) { 
-        totalYesEvens++;
-      } else {
-        totalYesOdds++;
-      }
-    }
-  }
+        function calculateResults() {
+            var totalYesEvens = 0;
+            var totalYesOdds = 0;
+            var totalQuestions = 20; 
 
-  
-  var resultText = "Based on your answers, you are ";
-  if (totalYesEvens > totalYesOdds) {
-resultText += "mostly introverted.";
-      } else if (totalYesOdds > totalYesEvens) {
-        resultText += "mostly extroverted.";
-  } else {
-      resultText += "a balance between introverted and extroverted traits.";
-    }  
+            for (var i = 1; i <= totalQuestions; i++) {
+                if (document.getElementById('yes' + i).checked) {
+                    if (i % 2 === 0) { 
+                        totalYesEvens++;
+                    } else {
+                        totalYesOdds++;
+                    }
+                }
+            }
 
-  
-  document.getElementById('result').textContent = resultText;
-}
-</script>
+            var resultText = "Based on your answers, you are ";
+            if (totalYesEvens > totalYesOdds) {
+                resultText += "mostly introverted.";
+            } else if (totalYesOdds > totalYesEvens) {
+                resultText += "mostly extroverted.";
+            } else {
+                resultText += "a balance between introverted and extroverted traits.";
+            }
+
+            // Set the hidden input's value and submit the form
+            document.getElementById('resultInput').value = resultText;
+            document.getElementById('surveyForm').submit();
+        }
+    </script>
 </body>
+</html>
